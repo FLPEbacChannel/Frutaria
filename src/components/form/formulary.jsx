@@ -3,9 +3,9 @@ import { Container, Form, Input, Button } from './styles';
 
     export function Formulary({ onAddProduct }) {
 
-        const [name, setName] = useState('');
+        const [title, setTitle] = useState('');
         const [price, setPrice] = useState('');
-        const [img, setImg] = useState('');
+        const [src, setSrc] = useState('');
 
 
         const handleSubmit = (e) => {
@@ -35,7 +35,7 @@ import { Container, Form, Input, Button } from './styles';
                      <Input
                         id="name"
                         value={name}
-                        onChange={(e) => setName(e.target.value)}
+                        onChange={(e) => setTitle(e.target.value)}
                         placeholder='Nome do produto'
                         required
                         
@@ -55,8 +55,8 @@ import { Container, Form, Input, Button } from './styles';
                     <label htmlFor="img">URL da imagem</label>
                      <Input
                         id='img'
-                        value={img}
-                        onChange={(e) => setImg(e.target.value)}
+                        value={src}
+                        onChange={(e) => setSrc(e.target.value)}
                         placeholder='https://...' 
                         required
                     />
@@ -66,4 +66,5 @@ import { Container, Form, Input, Button } from './styles';
                 </Form>
             </Container>
         )
+
     }
