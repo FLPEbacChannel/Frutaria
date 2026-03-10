@@ -21,7 +21,7 @@ import { Container, Form, Input, Button } from './styles';
 
             setName('')
             setPrice('')
-            setImg('')
+            setSrc('')
             console.log('Produto Cadastrado!')
         }
 
@@ -68,4 +68,5 @@ import { Container, Form, Input, Button } from './styles';
         )
 
     }
+
 
