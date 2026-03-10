@@ -12,9 +12,9 @@ import { Container, Form, Input, Button } from './styles';
             e.preventDefault();
 
             const newFruit = {
-                name: name,
+                name: tile,
                 price: `${price}R$`,
-                img: img,
+                img: src,
             }
 
             onAddProduct(newFruit)
@@ -68,3 +68,4 @@ import { Container, Form, Input, Button } from './styles';
         )
 
     }
+
